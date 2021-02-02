@@ -1,0 +1,45 @@
+siempre se inicia con un index.html
+
+luego sigue hacer la creación de tags o etiquetas
+
+hay ediutores en linea como codepen y jsbin, si es que no se pudo 
+configurar el entorno de trabajo con ides como visual code o atom
+
+1. EN EL ARCHIVO INDEX LO PRIMERO QUE DEBE IR ES EL DOC TYPE
+NO ES ETIQUETA SINO UNA DECLARACION DE LA VERSION QUE EL NAVEGADOR 
+DEBERA LEER PARA SABER COMO EJECUTARLO
+
+2. ELEMENTOS BASICOS DE UNA PAGINA WEB: 
+tag HTML: SOLO SE INDICA UNA VEZ ABRE Y CIERRTA
+TAG HEAD: SOLO SE INDICA UNA VEZ: METADATOS DE LA WEB Y SUS CARACTERISTICAS
+TAG TITLE: TITULO DE LA WEB, en la barra de tareas o pestañas
+TAG META: METADATOS, POR EJM UTF-8 PARA LOS CARACTERES DE LA WEB
+TAG BODY: VA DESPUES DE HEAD, TEXTO, IMAGENES, TEXTO DE LA WEB
+
+3. METADATOS: DATOS QUE DESCRIBEN A OTROS DATOS, SON INFO AÑADIDA
+ SOBRE LA INFORMACION CENTRAL O PRINCIPAL
+
+4. ATRIBUTOS: TODOS LOS ELEMENTOS PUEDEN TENER ATRIBUTOS COMO IMAGENES, TEXTOS, EJECUTARLO, UNOS ELÑEMENTOS REQUIEREN DE ATRIBUTOS PARA FUNCIONAR COMO META Y DE INSERTAR IMAGEN, algunos ATRIBUTOS SON BOOLEANOS Y ES TRUE SOLO AL ESCRIBIRLO, Y SI NO LO PONES YA ES FALSE COMO EL AUTOFOCUS.
+https://www.w3schools.com/htmL/html_attributes.asp
+
+        <p nombre="valor"></p>
+        <input autofocus></input>
+
+5. ENCABEZA DE PAGINA WEB: SE UTILIZAN LOS TAGS HEADER DENTRO DEL BODY, ES LA INFORMACION DE LA PARTE SUPERIOR DE LA WEB, PUEDEN HABER VARIOS HEADERS(ENCABEZADOS), SOLO PUEDE HABER UN HEAD.
+LOS TAGS DIV VAN ACOMPAÑANDO A HEADERS (debajo de HEADER, CUANDO CIERRA HEADER , AHÍ VA DIV), LOS DIV AGRUPAN ELEMENTOS DENTRO DE UN ELEMENTO PARA LIMITAR PROPIEDADES CSS A UN GRUPO ESPECIFICO O MODIFICAR ATRIBUTOS, POR EJM, ACA SE UTILIZARÁ PARA CAMBIAR EL FONDO DEL BLOQUE ES CUESTIÓN.
+
+6. ATRIBUTO STYLE: ES UN TAG QUE CONTIENE TECNOLOGIA CSS, SE APLICA A TODOS LOS ELEMNTOS QUE SE MUESTRAN EN PANTALLA, LA CUAL SE UTILIZARAN PARA DARLE FORMATO A LOS PARRAFOS DEL HEADER, ES NECESARIO INDICAR QUE NO SE DEBE UTILIZAR STYLE EN CASOS ESPECIFICOS PERO PARA UN EJEMPLO ESTA BIEN POR AHORA. CON STYLE PODEMOS UTILIZAR LAS PROPIEDADES DISPLAY Y WIDTH
+
+7. COLORES: SE PUEDEN LLAMAR DE DIFERENTES FORMAS, UNA CON SUS CODIGOS CON NUMERAL#, SE INDICAN COMO UNA PROPIEDAD DENTRO DEL ATRIBUTO CSS STYLE, si se requiere colores con SU NUMERO HEXAGESIMAL, DIGITAR color picker EN GOOGLE.
+
+8. Tipografia: ES LA FUENTE DE LOS TEXTOS DE NUESTRA WEB, SE PUEDEN UTILIZAR LAS PROPIEDADES FONT-FAMILY(PARA EL BODY) Y FONT-WEIGHT(EN LOS PARRAFOS DEL HEADER, sirve para el grosor de las fuentes), SIEMPRE DENTRO DE STYLE, IGUALMENTE TMB se puede usar text-align para alinear el texto, en este caso en los header, los font weight van directamente en los parrafos, SI BIEN ES CIERTO EN FONT-FAMILY, SE INGRESAN 3 TIPOS DE FUENTE, LO QUE HACE HTML ES BUSCAR UNA Y LUEGO OTRA, DEPENDIENDO DEL SISTEMA OPERATIVO.
+
+9. TITULOS: son los tags <h1 hasta el <h6, convierten a los títulos en uno mucho más potente, no sólo aumenta su tamaño de fuente sino que lo pone en negrita, sirven para resaltar los títulos más importantes de una web, se recomienda usar h1 solo una vez en una pagina web, la fuente imponente igualmente puede ser modificada, la que presenta por defecto son los valores que el navegador da en su valor default.
+
+10. ESPACIOS EN BLANCO: AQUELLOS ESPACIOS QUE HACEN QUE EL DISEÑO RESPIRE, SON LAS PROPIEDADES MARGIN Y PADDING DENTRO DEL ATRIBUTO STYLE, LOS PADDING VAN DENTRO DEL HEADER, y los margin van dentro del BODY, ya que eliminan, reducen o agrandan los margenes o espacions que chocan con la ventana del navegador. Punto aparte para el tag <section> el cual divide las secciones, debe ir dentro de body, pero debajo del header y de la seccion del primer <div>, acá se muestran nuevas propiedades del atributo css style, background-color, align-left, align-right, width, height
+
+11. LISTAS: EXISTEN 3 CLASES DE LISTAS:
+        LISTAS ORDENADAS: tag <ol> -> <li>, rankings, etc
+        LISTAS DESORDENADAS: tag <ul> -> <li>, las listas se crean con vieñetas pero se pueden sacar, dentro de los ul se puede llamar a padding=0
+        LISTAS DE DEFINICON: tag <dl> -> <dt> -> <dd>:diccionarios, conceptos, puntos con explicacion
+EL ATRIBUTO STYLE SE REPITE MUCHA VECES, POR LO QUE ES ENGORROSO LA FORMA ACTUAL DE LLAMARLO EN CADA TAG, MAS ADELANTE SE SABRA LA FORMA IDEAL
