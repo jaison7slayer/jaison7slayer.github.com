@@ -1,0 +1,274 @@
+/* Color Theme Swatches in Hex */
+/*.My-Color-Theme-1-hex { color: #F2420C; }
+.My-Color-Theme-2-hex { color: #FF1900; }
+.My-Color-Theme-3-hex { color: #E60017; }
+.My-Color-Theme-4-hex { color: #FF008C; }
+.My-Color-Theme-5-hex { color: #F20CEE; }
+*/
+
+/* Color Theme Swatches in RGBA */
+/*.My-Color-Theme-1-rgba { color: rgba(242, 66, 12, 1); }
+.My-Color-Theme-2-rgba { color: rgba(255, 25, 0, 1); }
+.My-Color-Theme-3-rgba { color: rgba(230, 0, 23, 1); }
+.My-Color-Theme-4-rgba { color: rgba(255, 0, 140, 1); }
+.My-Color-Theme-5-rgba { color: rgba(242, 12, 238, 1); }
+*/
+
+/* Color Theme Swatches in HSLA */
+/*.My-Color-Theme-1-hsla { color: hsla(14, 90, 49, 1); }
+.My-Color-Theme-2-hsla { color: hsla(5, 100, 50, 1); }
+.My-Color-Theme-3-hsla { color: hsla(354, 100, 45, 1); }
+.My-Color-Theme-4-hsla { color: hsla(327, 100, 50, 1); }
+.My-Color-Theme-5-hsla { color: hsla(301, 90, 49, 1); }
+*/
+
+/*aqui van los comentarios en CSS*/
+        /*@font-face{  OTRA FORMA DE UTILIZAR LAS FUENTES, DESCARGANDOLAS COMO ARCHIVO
+            font-family: MuseoModerno-VariableFont_wght; 
+            src:url(../fonts/MuseoModerno-VariableFont_wght.ttf); } 
+        .titulo{ font-family:MuseoModerno-VariableFont_wght; }*/
+
+        html{
+            font-family: 'Salsa', cursive;
+        }
+        .title{
+            text-transform: uppercase;
+            text-align: center;
+            /*background-color: peru;*/
+            color: teal;
+        }
+        body{
+            /*background-color: burlywood;*/
+            /*background-image: url(../images/OIP.jpg);*/
+            /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f6e6b4+0,ed9017+100;Yellow+3D+%231 */
+            background: #f6e6b4; /* Old browsers */
+            background: -moz-linear-gradient(-45deg,  #f6e6b4 0%, #ed9017 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(-45deg,  #f6e6b4 0%,#ed9017 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(135deg,  #f6e6b4 0%,#ed9017 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6e6b4', endColorstr='#ed9017',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+        }
+        /*MEDIA QUERIES*/        
+        img{
+            max-width: 100%;
+        }
+        .video {
+            position: center;
+            top: 0px;
+            width: 19em;
+            height: 12em;
+        }
+        /*MODIFICADORES DE TEXTO*/        
+        a{
+            text-decoration: underline;
+        }
+        a:hover{
+            opacity: 0.5;
+        }
+        a:active{
+            color: sienna;
+        }
+        a:link{
+            color: springgreen;
+        }
+        .paraf{
+            line-height: 1.8em;
+            font-weight: lighter;
+        }
+        .container{
+            background: #22c1c3;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #fdbb2d, #22c1c3);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #fdbb2d, #22c1c3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .content{
+            max-width: 960px;
+            /*max-height: 500px;  COMENTADO POR MEDIA QUERIES*/
+            /*EJEMPLO DE USO DE UNIDADES RELATIVAS*/
+            /*height: 100%; COMENTADO POR MEDIA QUERIES*/
+            width: 100%;
+            height: 80vh; /*CREADO POR MEDIA QUERIES*/
+            /*background-color: #fff;*/
+            background-color: #f6e6b4;
+            box-shadow: crimson;
+            border-radius: 4px;
+            /*CLASE POSITION*/
+            position: relative;
+            /*padding: 1.8em; COMENTADO POR MOBILE FIRST*/
+            overflow: scroll;
+        }
+        /*MOBILE FIRST*/
+        .content{
+            padding: 1em;
+        }
+        td{
+            display: block;
+            width: 100%;
+        }
+        td:nth-of-type(1){
+            font-size: 1.5em;
+            color: steelblue;
+            font-weight: bolder;
+        }
+        th{
+            display: none;
+        }
+        /*MOBILE FIRST*/
+        h2{
+            color: red;
+        }
+        p{color: royalblue;}
+        .vaya{
+            color:aqua;
+            background-color: black;            
+        }
+        #nuevo{
+            color: chocolate;
+        }
+        /*th{
+            border:solid 1px;
+        }
+        td{
+            border:solid 1px;
+        }*/
+        /*SELECTOR PARA LAS ESTRELLAS*/
+        .fa-star-half-alt{
+            color: yellowgreen;
+        }
+        /*SELECTOR DE CLASE QUE AFECTA A LA TABLA CREADA PARA MOSTRAR LOS SUBGENEROS DE SALSA*/
+        .table{
+            width: 100%;
+            border-spacing: 0;
+        }
+        .table th, .table td{
+            padding: 1em; /*ESTO REEMPLAZA AL PADDING-BOTTOM, PADDING-TOP, PADDING-LEFT, ETC*/
+            text-align: left;
+        }
+        .table tr:nth-child(even){
+            background-color: khaki;
+        }
+        /*SELECTORES DE TAG <H2 PARA LOS BORDES EN LOS TITULOS Y SUBTITULOS*/
+        .title-2{
+            /*border-style: solid;*/
+            /* APLICANDO SHORTHAND PROPERTIES
+            border-bottom-style: solid;
+            border-width: 2px;
+            border-color: coral;*/
+            border-bottom: solid 2px coral;
+            padding-bottom: 1em;
+            /*30RETOQUES FINALES*/
+            font-size: 2em;
+        }
+        .efecto{
+            background-color: coral;
+            color: white;
+            border-bottom: solid 2px coral;
+            /*padding: 1em 2em 3em 4em;*/
+            /*UNIDADES DE MEDIDA RELATIVAS*/
+            /*padding: 10px;*/
+            padding: 0.5em;
+            /*APLICANDO BORDES REDONDEADOS*/
+            /*border-top-left-radius: 2em;
+            border-top-right-radius: 2em;
+            border-bottom-left-radius: 2em;
+            border-bottom-right-radius: 2em;*/
+            /*APLICANDO BORDES REDONDEADOS con shorthand properties*/
+            /*border-radius: 2em;*/
+            border-radius: 4px;
+            /*30RETOQUES FINALES*/
+            margin-right: 0.5em;
+        }
+        /*CLASE POSITION*/
+        .cierre{
+            position: absolute;
+            top: 1em;
+            right: 1em;
+        }
+
+        .cerrar{
+            height: 40px;
+            width: 40px;
+            color: white;
+            border-radius: 50%;
+            background-color: royalblue;
+            cursor: pointer;
+            display: inline;
+            box-shadow: #fdbb2d;
+            display: inline-block;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+            font-weight: 300;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        /*30RETOQUES_FINALES*/
+        .address{
+            font-weight: bold;
+            color: darkgreen;
+            font-size: 1.2em;
+            margin-top: 0.5em;
+            display: inline-block;
+        }
+        .imagen{
+            float: left;
+            margin-right: 1em;
+            height: 250px;
+        }
+        i{
+            color: teal;
+        }
+        /*EJEMPLO DE ALTO DEL CONTENEDOR (MEDIA QUERIES)*/
+        /*@media (max-width:600px){
+            .content{
+                padding: 1em;
+            }
+            td{
+                display: block;
+                width: 100%;
+            }
+            td:nth-of-type(1){
+                font-size: 1.5em;
+                color: sandybrown;
+                font-weight: bolder;
+            }
+            th{
+                display: none;
+            }
+        }*/
+        /*MOBILE FIRST*/
+        @media (min-width:900px){
+            .content{
+                padding: 1.8em;
+                overflow: visible;
+            }
+            td{
+                display: table-cell;
+                width: auto;
+            }
+            td:nth-of-type(1){
+                font-size: 1em;
+                font-weight: bolder;
+            }
+            th{
+                display: table-cell;
+            }
+            .title-2{
+                align-items: center;
+                justify-content: center;
+            }
+            .video {
+                width: 560px;
+                height: 315px;
+            }
+            i{
+                color: teal;
+            }
+        }
+        @media (min-height:550px){
+            .content{
+                height: 500px;
+            }
+        }
