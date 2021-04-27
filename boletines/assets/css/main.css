@@ -86,18 +86,13 @@
         }
         .content{
             max-width: 960px;
-            /*max-height: 500px;  COMENTADO POR MEDIA QUERIES*/
-            /*EJEMPLO DE USO DE UNIDADES RELATIVAS*/
-            /*height: 100%; COMENTADO POR MEDIA QUERIES*/
             width: 100%;
             height: 80vh; /*CREADO POR MEDIA QUERIES*/
-            /*background-color: #fff;*/
             background-color: #f6e6b4;
             box-shadow: crimson;
             border-radius: 4px;
             /*CLASE POSITION*/
             position: relative;
-            /*padding: 1.8em; COMENTADO POR MOBILE FIRST*/
             overflow: scroll;
         }
         /*MOBILE FIRST*/
@@ -128,12 +123,6 @@
         #nuevo{
             color: chocolate;
         }
-        /*th{
-            border:solid 1px;
-        }
-        td{
-            border:solid 1px;
-        }*/
         /*SELECTOR PARA LAS ESTRELLAS*/
         .fa-star-half-alt{
             color: yellowgreen;
@@ -152,11 +141,6 @@
         }
         /*SELECTORES DE TAG <H2 PARA LOS BORDES EN LOS TITULOS Y SUBTITULOS*/
         .title-2{
-            /*border-style: solid;*/
-            /* APLICANDO SHORTHAND PROPERTIES
-            border-bottom-style: solid;
-            border-width: 2px;
-            border-color: coral;*/
             border-bottom: solid 2px coral;
             padding-bottom: 1em;
             /*30RETOQUES FINALES*/
@@ -166,17 +150,7 @@
             background-color: coral;
             color: white;
             border-bottom: solid 2px coral;
-            /*padding: 1em 2em 3em 4em;*/
-            /*UNIDADES DE MEDIDA RELATIVAS*/
-            /*padding: 10px;*/
             padding: 0.5em;
-            /*APLICANDO BORDES REDONDEADOS*/
-            /*border-top-left-radius: 2em;
-            border-top-right-radius: 2em;
-            border-bottom-left-radius: 2em;
-            border-bottom-right-radius: 2em;*/
-            /*APLICANDO BORDES REDONDEADOS con shorthand properties*/
-            /*border-radius: 2em;*/
             border-radius: 4px;
             /*30RETOQUES FINALES*/
             margin-right: 0.5em;
@@ -220,24 +194,6 @@
         i{
             color: teal;
         }
-        /*EJEMPLO DE ALTO DEL CONTENEDOR (MEDIA QUERIES)*/
-        /*@media (max-width:600px){
-            .content{
-                padding: 1em;
-            }
-            td{
-                display: block;
-                width: 100%;
-            }
-            td:nth-of-type(1){
-                font-size: 1.5em;
-                color: sandybrown;
-                font-weight: bolder;
-            }
-            th{
-                display: none;
-            }
-        }*/
         /*MOBILE FIRST*/
         @media (min-width:900px){
             .content{
